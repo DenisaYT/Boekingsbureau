@@ -1,13 +1,35 @@
 package feestje;
 
+import java.util.Scanner;
+
 public class Start {
 
-	public Start() {
-		// TODO Auto-generated constructor stub
+	public static void main(String [] args) {
+		Menu.printMenu();
+		Menu.inputMenu();
 	}
+	
 
 }
-
+class Menu{
+	static void printMenu(){
+		System.out.println("Typ 1 voor een zanger");
+		System.out.println("Typ 2 voor een goochelaar");
+		System.out.println("Typ 3 voor een stripper");
+		System.out.println("Typ 4 voor een clown");
+	}
+	static int inputMenu() {
+		Scanner sc = new Scanner(System.in);
+		int keuze = sc.nextInt();
+		return keuze;
+	}
+}
+class Boekingsbureau{
+	
+	Artiest artiestOpleveren(int artiestKeuze) {
+		return new Zanger();
+	}
+}
 abstract class Artiest implements Optreden{
 
 	public Artiest() {
