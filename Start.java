@@ -17,6 +17,7 @@ class Menu{
 		System.out.println("Typ 2 voor een goochelaar");
 		System.out.println("Typ 3 voor een stripper");
 		System.out.println("Typ 4 voor een clown");
+		System.out.println("Typ 5 voor een jojo-artiest");
 	}
 	static int inputMenu() {
 		Scanner sc = new Scanner(System.in);
